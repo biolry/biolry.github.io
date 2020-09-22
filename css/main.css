@@ -4,21 +4,18 @@ body {
 }
 
 .logo h1 {
-	color: #F0F1F2;
+	color: #DADADA;
 	font-size: 100px;
 	width: 900px;
 	font-weight: 600px;
 	font-family: 'Arimo', sans-serif;
 }
-
-.col {
-	margin-left: 60px;
-	margin-bottom: 100px;
+video {
+	width: 500px;
 }
 
-.card-header {
-	text-align: center;
-	margin-bottom: 150px;
+.col {
+	margin-bottom: 100px;
 }
 
 .logo {
@@ -79,6 +76,14 @@ body {
 	font-size: 40px;
 }
 
+.col-md-6 h2 {
+	font-size: 35px;
+}
+
+.col-md-6 p {
+	margin-top: 50px;
+	font-size: 40px;
+}
 .featurette {
 	margin-bottom: 300px;
 }
@@ -110,6 +115,9 @@ body {
 	opacity: 1;
 	animation: mouse 2s infinite;
 }
+.mobail-link-video {
+	display: none;
+}
 
 @keyframes mouse {
 	from {
@@ -121,10 +129,27 @@ body {
 		top: 35px;
 	}
 }
+@media only screen and (max-width: 1025px) {
+	video {
+	  width: 350px;
+    }
+}
+@media only screen and (max-width: 600px) {
+	h1{
+		margin-right: 30px;
+	}
+}
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 720px) {
 	body {
 		background: url(../images/bg/cool-background.svg) #F8F9FA no-repeat;
+	}
+
+	.col-md-6 video{
+		display: none;
+	}
+	.mobail-link-video {
+		display: block;
 	}
 	.logo h1 {
 		color: #543278;
@@ -200,5 +225,8 @@ body {
 	}
 	footer {
 		font-size: 12px;
+	}
+	.about-video {
+		display: none;
 	}
 }
