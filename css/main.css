@@ -14,9 +14,7 @@ video {
 	width: 500px;
 }
 
-.col {
-	margin-bottom: 100px;
-}
+
 
 .logo {
 	margin-top: 200px;
@@ -85,7 +83,7 @@ video {
 	font-size: 40px;
 }
 .featurette {
-	margin-bottom: 300px;
+	margin-bottom: 150px;
 }
 
 .middle {
